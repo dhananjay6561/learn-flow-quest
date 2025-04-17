@@ -1,4 +1,3 @@
-
 import { ModuleData } from "../components/ModuleContent";
 
 export const modulesData: ModuleData[] = [
@@ -6,7 +5,15 @@ export const modulesData: ModuleData[] = [
     id: 1,
     title: "Introduction to Web Development",
     description: "Learn the basics of HTML, CSS, and JavaScript",
-    content: "Web development is the work involved in developing a website for the Internet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. This module introduces you to the fundamental concepts of HTML, CSS, and JavaScript that form the building blocks of web development.",
+    content: `Welcome to Web Development! In this foundational module, you'll learn:
+
+• The structure of HTML documents and semantic markup
+• CSS styling fundamentals including flexbox and grid layouts
+• JavaScript basics: variables, functions, and DOM manipulation
+• How browsers interpret and render web pages
+• Best practices for writing clean, maintainable code
+
+By the end of this module, you'll be able to create interactive web pages from scratch!`,
     checkpoints: [
       {
         id: 101,
@@ -41,7 +48,15 @@ export const modulesData: ModuleData[] = [
     id: 2,
     title: "React JS Fundamentals",
     description: "Master the basics of React JS library",
-    content: "React is a JavaScript library for building user interfaces, particularly single-page applications. It's used for handling the view layer in web and mobile apps. React allows you to design simple views for each state in your application, and will efficiently update and render the right components when your data changes.",
+    content: `Dive into modern frontend development with React! This module covers:
+
+• Component-based architecture and JSX syntax
+• State management and props drilling
+• Hooks system: useState, useEffect, and custom hooks
+• Virtual DOM and React's rendering lifecycle
+• Form handling and event management in React
+
+Get ready to build dynamic, interactive user interfaces with React!`,
     checkpoints: [
       {
         id: 201,
@@ -76,7 +91,15 @@ export const modulesData: ModuleData[] = [
     id: 3,
     title: "Responsive Design Principles",
     description: "Learn how to create responsive web designs",
-    content: "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Content, design, and performance are necessary across all devices to ensure usability and satisfaction.",
+    content: `Master the art of responsive web design! Key topics include:
+
+• Mobile-first design philosophy
+• CSS media queries and breakpoints
+• Flexible grid systems and fluid layouts
+• Responsive images and media
+• Testing and debugging across devices
+
+Learn to create websites that look great on any screen size!`,
     checkpoints: [
       {
         id: 301,
@@ -111,7 +134,15 @@ export const modulesData: ModuleData[] = [
     id: 4,
     title: "Backend Development with Node.js",
     description: "Introduction to server-side programming with Node.js",
-    content: "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting.",
+    content: `Explore server-side development with Node.js! You'll learn:
+
+• Setting up a Node.js environment
+• Building RESTful APIs with Express
+• Database operations with MongoDB
+• Authentication and authorization
+• Error handling and logging
+
+Become proficient in full-stack JavaScript development!`,
     checkpoints: [
       {
         id: 401,
@@ -146,7 +177,15 @@ export const modulesData: ModuleData[] = [
     id: 5,
     title: "Advanced JavaScript Concepts",
     description: "Deep dive into advanced JavaScript features",
-    content: "This module explores advanced JavaScript concepts that are essential for modern web development. You'll learn about closures, prototypes, promises, async/await, and other advanced features of the language.",
+    content: `Take your JavaScript skills to the next level! Topics covered:
+
+• Closures and scope chain
+• Prototypal inheritance and classes
+• Async programming with Promises
+• Event loop and concurrency
+• Modern ES6+ features and patterns
+
+Master the advanced concepts that power modern JavaScript applications!`,
     checkpoints: [
       {
         id: 501,
