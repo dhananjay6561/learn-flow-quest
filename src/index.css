@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 246 30% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 265 83% 58%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 255 53% 75%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 262 83% 92%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,7 +32,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 265 83% 58%;
 
     --radius: 0.5rem;
 
@@ -96,6 +98,70 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .lms-card {
+    @apply rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .lms-container {
+    @apply container mx-auto px-4 md:px-6 py-6;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .module-card {
+    @apply lms-card p-5 cursor-pointer hover:border-lms-purple-light transition-all duration-200;
+  }
+  
+  .module-card.active {
+    @apply border-lms-purple bg-gradient-to-br from-white to-lms-purple-lighter/20;
+  }
+  
+  .xp-badge {
+    @apply inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-lms-purple-lighter text-lms-purple-dark;
+  }
+  
+  .checkpoint-badge {
+    @apply inline-flex items-center justify-center w-8 h-8 rounded-full bg-lms-gray-light text-lms-purple border border-lms-purple-lighter;
+  }
+  
+  .checkpoint-badge.completed {
+    @apply bg-lms-purple text-white;
+  }
+  
+  .streak-badge {
+    @apply inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-lms-blue-light text-lms-blue;
+  }
+  
+  .level-badge {
+    @apply inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-lms-purple to-lms-purple-light text-white font-semibold;
+  }
+  
+  .cta-button {
+    @apply rounded-lg px-4 py-2 font-medium transition-all duration-200;
+  }
+  
+  .primary-button {
+    @apply cta-button bg-lms-purple text-white hover:bg-lms-purple-dark;
+  }
+  
+  .secondary-button {
+    @apply cta-button bg-white text-lms-purple border border-lms-purple hover:bg-lms-purple-lighter/30;
+  }
+  
+  .outline-button {
+    @apply cta-button bg-transparent text-lms-purple border border-lms-purple hover:bg-lms-purple-lighter/20;
   }
 }
